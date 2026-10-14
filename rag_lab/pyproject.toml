@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "replica-rag-lab"
+version = "0.1.0"
+description = "Hands-on Qdrant lab for chunking and RAG retrieval experiments"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "datasets>=3.0,<5",
+  "qdrant-client[fastembed]>=1.14.2,<2",
+  "rich>=13,<15",
+]
+
+[project.optional-dependencies]
+notebooks = ["jupyterlab>=4,<5"]
+frameworks = [
+  "langchain>=1,<2",
+  "langchain-qdrant>=1,<2",
+]
+evaluation = ["ragas>=0.3,<0.5"]
+
+[project.scripts]
+rag-lab = "rag_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

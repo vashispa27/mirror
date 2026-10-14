@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.venv/
+*.egg-info/
+/chat.txt
+/private-chats/
+/exports/
+__pycache__/
+*.py[cod]
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+infra/.build/*.zip
+!infra/.build/.gitkeep
+data/source/

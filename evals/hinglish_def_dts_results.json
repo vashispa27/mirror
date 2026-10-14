@@ -1,0 +1,317 @@
+{
+  "method": "Def-DTS-style per-utterance local adaptation",
+  "model": "mlx-community/Qwen3.5-4B-MLX-4bit",
+  "source": "https://aclanthology.org/2025.findings-acl.1066/",
+  "context": "two preceding and three following messages",
+  "results": [
+    {
+      "index": 0,
+      "intent": "INTRODUCE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.63,
+      "raw_output": "<result>\n<preceding_context>There is no preceding context as the conversation starts here.</preceding_context>\n<subsequent_context>Rohan responds with a greeting and asks Asha how she is doing.</subsequent_context>\n<utterance_intent>INTRODUCE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 1,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 2.4,
+      "raw_output": "<result>\n<preceding_context>Asha initiates the conversation with a greeting.</preceding_context>\n<subsequent_context>Rohan reciprocates the greeting, and the conversation shifts to asking about Asha's well-being before moving to the weather.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 2,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.3,
+      "raw_output": "<result>\n<preceding_context>Two users exchange casual greetings.</preceding_context>\n<subsequent_context>Rohan asks Asha to share her status, which Asha then uses to pivot to discussing the cold weather outside.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 3,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.16,
+      "raw_output": "<preceding_context>Asha asks Rohan how he is doing after he greets her.</preceding_context>\n<subsequent_context>Asha shifts the conversation to complain about the cold weather outside.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>"
+    },
+    {
+      "index": 4,
+      "intent": "INTRODUCE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.62,
+      "raw_output": "<result>\n<preceding_context>Rohan asks Asha to share her status after she inquires about his well-being.</preceding_context>\n<subsequent_context>Rohan agrees with Asha's comment and adds details about the wind, continuing the discussion on the weather.</subsequent_context>\n<utterance_intent>INTRODUCE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 5,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 2.43,
+      "raw_output": "<result>\n<preceding_context>Asha asks Rohan about the cold weather outside today.</preceding_context>\n<subsequent_context>Rohan confirms the cold wind and adds that the weather this year seems worse than last year.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 6,
+      "intent": "DEVELOP_TOPIC",
+      "topic_shift": false,
+      "elapsed_seconds": 2.26,
+      "raw_output": "<result>\n<preceding_context>Both speakers are discussing the current cold weather conditions.</preceding_context>\n<subsequent_context>The conversation continues by comparing the current year's weather to the previous year.</subsequent_context>\n<utterance_intent>DEVELOP_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 7,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 2.19,
+      "raw_output": "<result>\n<preceding_context>Both speakers are discussing the current poor weather conditions.</preceding_context>\n<subsequent_context>The conversation continues to agree on the weather being worse than usual.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 8,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 2.34,
+      "raw_output": "<result>\n<preceding_context>Rohan compares the current year's weather to the previous year, noting it wasn't as cold.</preceding_context>\n<subsequent_context>Rohan mentions that the weather scene was different the day before.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 9,
+      "intent": "DEVELOP_TOPIC",
+      "topic_shift": false,
+      "elapsed_seconds": 2.78,
+      "raw_output": "<result>\n<preceding_context>Both Rohan and Asha agree that the weather last year was not as cold as expected.</preceding_context>\n<subsequent_context>Asha confirms that the weather pattern from the previous year did not occur this time.</subsequent_context>\n<utterance_intent>DEVELOP_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 10,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.52,
+      "raw_output": "<result>\n<preceding_context>Rohan contrasts the current scene with a different one from the previous day.</preceding_context>\n<subsequent_context>Rohan then shifts the conversation to ask about a new shirt for the party.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 11,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.51,
+      "raw_output": "<result>\n<preceding_context>Rohan and Asha are discussing how a previous event was different from usual.</preceding_context>\n<subsequent_context>Rohan immediately shifts the conversation to asking about a new shirt for the party.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 12,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.59,
+      "raw_output": "<result>\n<preceding_context>Both speakers are discussing how things used to be different in the past.</preceding_context>\n<subsequent_context>The conversation shifts to Rohan asking about a new shirt purchased for an upcoming party.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 13,
+      "intent": "INTRODUCE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.55,
+      "raw_output": "<result>\n<preceding_context>Both speakers are discussing a recent change in the weather or situation.</preceding_context>\n<subsequent_context>The conversation continues with details about the outfit chosen for the party.</subsequent_context>\n<utterance_intent>INTRODUCE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 14,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.44,
+      "raw_output": "<result>\n<preceding_context>Rohan asks Asha if she bought a new shirt for the party.</preceding_context>\n<subsequent_context>Rohan follows up by asking if she will wear the shirt with jeans.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 15,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 2.5,
+      "raw_output": "<result>\n<preceding_context>Rohan asks Asha if she bought a new shirt for the party the previous day.</preceding_context>\n<subsequent_context>Asha confirms she bought a red shirt and mentions wearing dark blue jeans with it.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 16,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.33,
+      "raw_output": "<result>\n<preceding_context>Rohan asks if Asha will wear jeans with her red shirt.</preceding_context>\n<subsequent_context>Rohan then mentions his own plan to wear a black shirt.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 17,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.23,
+      "raw_output": "<result>\n<preceding_context>Conversation discusses wearing jeans with a shirt.</preceding_context>\n<subsequent_context>Conversation shifts to asking about the party start time.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 18,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 2.39,
+      "raw_output": "<preceding_context>Rohan suggests wearing a black shirt with the dark blue jeans Asha mentioned.</preceding_context>\n<subsequent_context>The conversation shifts from outfit choices to the party start time and then to Rohan's school project.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>"
+    },
+    {
+      "index": 19,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.72,
+      "raw_output": "<result>\n<preceding_context>Rohan discusses wearing a black shirt, and Asha agrees it looks good.</preceding_context>\n<subsequent_context>Rohan asks about the party start time, which Asha answers, before Rohan shifts to asking about his school project.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 20,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.42,
+      "raw_output": "<result>\n<preceding_context>Rohan asks Asha about the start time of a party.</preceding_context>\n<subsequent_context>Rohan immediately shifts the conversation to a school science project deadline.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 21,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.33,
+      "raw_output": "<result>\n<preceding_context>Conversation is about the start time of a party.</preceding_context>\n<subsequent_context>Discussion shifts to the status of a school science project submission.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 22,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.71,
+      "raw_output": "<result>\n<preceding_context>Rohan asks Asha if she has submitted her school science project.</preceding_context>\n<subsequent_context>Asha clarifies that she has not submitted it yet because she needs to finish the charts.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 23,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.65,
+      "raw_output": "<preceding_context>\nAsha confirms she has not yet submitted her science project and is still working on the charts.\n</preceding_context>\n<subsequent_context>\nRohan brings up the teacher's deadline, which is a new piece of information regarding the project's timeline.\n</subsequent_context>\n<utterance_intent>\nCHANGE_TOPIC\n</utterance_intent>"
+    },
+    {
+      "index": 24,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.48,
+      "raw_output": "<result>\n<preceding_context>Rohan reminds Asha that the teacher originally set the deadline for Friday.</preceding_context>\n<subsequent_context>Asha confirms the deadline change and asks Rohan if he will handle the data part.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 25,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 2.45,
+      "raw_output": "<result>\n<preceding_context>Asha informs Rohan that the project deadline has been extended from Friday to Monday.</preceding_context>\n<subsequent_context>Asha asks Rohan if he will handle the data section of the project.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 26,
+      "intent": "DEVELOP_TOPIC",
+      "topic_shift": false,
+      "elapsed_seconds": 2.31,
+      "raw_output": "<result>\n<preceding_context>They discuss a deadline extension for a task.</preceding_context>\n<subsequent_context>Rohan confirms he will create the graphs and Asha requests the presentation file.</subsequent_context>\n<utterance_intent>DEVELOP_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 27,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.34,
+      "raw_output": "<result>\n<preceding_context>Asha asks Rohan if he will handle the data part of the task.</preceding_context>\n<subsequent_context>Asha requests Rohan to send the presentation format photo.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 28,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.2,
+      "raw_output": "<result>\n<preceding_context>Rohan confirms he will create the data graphs.</preceding_context>\n<subsequent_context>Rohan explains the teacher provided the required format.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 29,
+      "intent": "DEVELOP_TOPIC",
+      "topic_shift": false,
+      "elapsed_seconds": 2.82,
+      "raw_output": "<result>\n<preceding_context>Rohan agrees to create graphs, and Asha requests that the presentation be sent to her.</preceding_context>\n<subsequent_context>Asha asks Rohan to send the format, and Rohan confirms he will send it while noting the title requirement.</subsequent_context>\n<utterance_intent>DEVELOP_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 30,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.22,
+      "raw_output": "<preceding_context>Rohan mentions the teacher discussed the format previously.</preceding_context>\n<subsequent_context>Rohan agrees to send the photo and adds a requirement about the title.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>"
+    },
+    {
+      "index": 31,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 3.19,
+      "raw_output": "<result>\n<preceding_context>Asha asks Rohan to send a photo of the format since she doesn't remember it.</preceding_context>\n<subsequent_context>Asha confirms the plan and offers to write the introduction while Rohan adds the title.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 32,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.81,
+      "raw_output": "<preceding_context>Rohan confirms he will send the photo and mentions a requirement for the first slide's title.</preceding_context>\n<subsequent_context>Asha states she will write the introduction, and the conversation later shifts to the weather.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>"
+    },
+    {
+      "index": 33,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 2.72,
+      "raw_output": "<result>\n<preceding_context>Both speakers are coordinating the final steps of preparing a presentation project.</preceding_context>\n<subsequent_context>The conversation shifts from the project to a discussion about the weather and buying a heater.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 34,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 2.6,
+      "raw_output": "<preceding_context>Rohan confirms the project is nearly finished while Asha states she will write the introduction.</preceding_context>\n<subsequent_context>Rohan agrees about the cold weather and mentions he needs to turn on the heater.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 35,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 2.71,
+      "raw_output": "<result>\n<preceding_context>Rohan confirms project completion while Asha mentions the weather has worsened.</preceding_context>\n<subsequent_context>Asha asks if Rohan was planning to buy a heater, which he confirms he ordered.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 36,
+      "intent": "DEVELOP_TOPIC",
+      "topic_shift": false,
+      "elapsed_seconds": 2.82,
+      "raw_output": "<result>\n<preceding_context>Rohan mentions he needs to turn on the heater due to increasing cold weather.</preceding_context>\n<subsequent_context>Rohan confirms he ordered a heater and Asha shares her own experience with the cold.</subsequent_context>\n<utterance_intent>DEVELOP_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 37,
+      "intent": "JUST_ANSWER",
+      "topic_shift": false,
+      "elapsed_seconds": 3.82,
+      "raw_output": "<preceding_context>Asha asks Rohan if he was planning to buy a heater.</preceding_context>\n<subsequent_context>Rohan confirms he bought it and mentions the delivery date, while Asha brings up her own experience with cold weather.</subsequent_context>\n<utterance_intent>JUST_ANSWER</utterance_intent>\n</result>"
+    },
+    {
+      "index": 38,
+      "intent": "CHANGE_TOPIC",
+      "topic_shift": true,
+      "elapsed_seconds": 3.12,
+      "raw_output": "<result>\n<preceding_context>Rohan confirms he bought a heater for delivery on Sunday.</preceding_context>\n<subsequent_context>Rohan notes that temperatures haven't dropped this much in October last year.</subsequent_context>\n<utterance_intent>CHANGE_TOPIC</utterance_intent>\n</result>"
+    },
+    {
+      "index": 39,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 3.63,
+      "raw_output": "<result>\n<preceding_context>Asha mentions it was very cold in the morning at her house.</preceding_context>\n<subsequent_context>Asha confirms the weather changed quickly and warns about potential temperature drops on the weekend.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 40,
+      "intent": "JUST_COMMENT",
+      "topic_shift": false,
+      "elapsed_seconds": 3.73,
+      "raw_output": "<result>\n<preceding_context>Rohan recalls that October in the previous year did not experience such cold weather.</preceding_context>\n<subsequent_context>Rohan mentions that the temperature could drop further on the weekend.</subsequent_context>\n<utterance_intent>JUST_COMMENT</utterance_intent>\n</result>"
+    },
+    {
+      "index": 41,
+      "intent": "DEVELOP_TOPIC",
+      "topic_shift": false,
+      "elapsed_seconds": 2.82,
+      "raw_output": "<preceding_context>Asha confirms that winter arrived earlier than last year.</preceding_context>\n<subsequent_context>There are no following messages to clarify the target.</subsequent_context>\n<utterance_intent>DEVELOP_TOPIC</utterance_intent>"
+    }
+  ],
+  "predicted_boundaries_excluding_initial_message": [
+    2,
+    3,
+    4,
+    10,
+    11,
+    12,
+    13,
+    17,
+    19,
+    21,
+    23,
+    33,
+    38
+  ]
+}

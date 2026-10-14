@@ -1,0 +1,5 @@
+{"kind":"exact","question":"What is Mom's birthday?","expected_subject":"mom","expected_type":"birthday","expected_value":"12 June"}
+{"kind":"contextual","question":"Are you bringing the cake on that date?","expected_subject":"party","expected_type":"event_date","expected_value":"20 June"}
+{"kind":"semantic","question":"My pain is getting better","expected_text":"knee has been hurting"}
+{"kind":"lexical","question":"What did we say about Zorblax-17?","expected_text":"Zorblax-17"}
+{"kind":"no_evidence","question":"Where is my passport?","expected_fact_count":0}

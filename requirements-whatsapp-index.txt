@@ -1,0 +1,6 @@
+# Kept for users who prefer a requirements file. The root pyproject.toml is
+# the production dependency contract and targets the pinned Qdrant 1.19.2 server.
+qdrant-client[fastembed]>=1.19,<1.20
+psycopg[binary]>=3.2,<4
+# Optional, only for an explicit live `--stage generate` invocation.
+openai>=1,<3

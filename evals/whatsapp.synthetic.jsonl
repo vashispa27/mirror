@@ -1,0 +1,6 @@
+{"query": "orchid-velvet-quantum", "user_id": "eval-user", "persona_id": "replica-a", "expected_target_message_ids": ["5d5c676a7d37879b443337427f758164"], "query_type": "exact_phrase"}
+{"query": "He suggests counting moons together with a blue telescope", "user_id": "eval-user", "persona_id": "replica-a", "expected_target_message_ids": ["91d050676a966c9596277637c293ff57"], "query_type": "paraphrase"}
+{"query": "He describes what he will do over the weekend", "user_id": "eval-user", "persona_id": "replica-a", "expected_target_message_ids": ["b8fed9f7d77dc21c5f257bc7e9cd36d9"], "query_type": "paraphrase"}
+{"query": "When his friend's bike broke down near the old bridge", "user_id": "eval-user", "persona_id": "replica-a", "expected_target_message_ids": ["a744744fd6730c0786d17691276ce856", "6cc90f9ac448cf25102aa9c383aaa3a8"], "query_type": "situation"}
+{"query": "Messages where he uses 'I always' to describe a habit", "user_id": "eval-user", "persona_id": "replica-a", "expected_target_message_ids": ["4ae32d5be5407912d5ec58f413ee208f"], "query_type": "style"}
+{"query": "Messages where he ends with an emoji", "user_id": "eval-user", "persona_id": "replica-a", "expected_target_message_ids": ["6cc90f9ac448cf25102aa9c383aaa3a8", "880b2f6fac8d6d50956a818df763279f"], "query_type": "style"}

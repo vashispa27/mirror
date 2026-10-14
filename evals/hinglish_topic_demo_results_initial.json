@@ -1,0 +1,51 @@
+{
+  "model": "mlx-community/Qwen3.5-4B-MLX-4bit",
+  "results": [
+    {
+      "block": [
+        0,
+        29
+      ],
+      "elapsed_seconds": 4.45,
+      "raw_output": "{\"starts\":[{\"index\":4,\"topic_id\":\"T1\",\"label\":\"weather\",\"kind\":\"NEW\"}], \"ending_topic\":{\"topic_id\":\"T1\",\"label\":\"weather\",\"summary\":\"Discussion about the cold weather, strong morning winds, and poor weather conditions this year compared to last year.\"}}",
+      "parsed": {
+        "starts": [
+          {
+            "index": 4,
+            "topic_id": "T1",
+            "label": "weather",
+            "kind": "NEW"
+          }
+        ],
+        "ending_topic": {
+          "topic_id": "T1",
+          "label": "weather",
+          "summary": "Discussion about the cold weather, strong morning winds, and poor weather conditions this year compared to last year."
+        }
+      }
+    },
+    {
+      "block": [
+        30,
+        41
+      ],
+      "elapsed_seconds": 2.14,
+      "raw_output": "{\"starts\":[{\"index\":34,\"topic_id\":\"T1\",\"label\":\"weather\",\"kind\":\"RESUME\"}], \"ending_topic\":{\"topic_id\":\"T1\",\"label\":\"weather\",\"summary\":\"Discussion about the sudden increase in cold weather, heater usage, and a comparison with last year's October temperatures.\"}}",
+      "parsed": {
+        "starts": [
+          {
+            "index": 34,
+            "topic_id": "T1",
+            "label": "weather",
+            "kind": "RESUME"
+          }
+        ],
+        "ending_topic": {
+          "topic_id": "T1",
+          "label": "weather",
+          "summary": "Discussion about the sudden increase in cold weather, heater usage, and a comparison with last year's October temperatures."
+        }
+      }
+    }
+  ]
+}

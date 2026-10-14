@@ -1,0 +1,9 @@
+{
+  "note": "Human-intended boundaries for this invented conversation; not shown to Qwen.",
+  "starts": [
+    {"index": 4, "topic_id": "T1", "label": "weather", "kind": "NEW"},
+    {"index": 13, "topic_id": "T2", "label": "party and clothing", "kind": "NEW"},
+    {"index": 21, "topic_id": "T3", "label": "school project", "kind": "NEW"},
+    {"index": 34, "topic_id": "T1", "label": "weather", "kind": "RESUME"}
+  ]
+}

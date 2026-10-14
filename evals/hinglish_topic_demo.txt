@@ -1,0 +1,46 @@
+# Synthetic Hinglish topic-boundary demo
+# Message numbers are stable IDs. All messages below are invented.
+# The break between processing blocks is after message 29; it is not a topic boundary.
+
+00 | Asha   | hey
+01 | Rohan  | heyy
+02 | Asha   | kaisa hai?
+03 | Rohan  | bas theek, tu bata
+04 | Asha   | aaj bahar kitni thand hai yaar
+05 | Rohan  | haan subah se hawa bhi tez chal rahi hai
+06 | Asha   | is saal weather kuch zyada hi kharab lag raha
+07 | Rohan  | pichle saal itna cold nahi tha shayad
+08 | Asha   | mujhe bhi wahi laga
+09 | Rohan  | but kal to alag hi scene tha
+10 | Asha   | haan, aise pehle nahi hota tha
+11 | Rohan  | arre hota tha, tu bhool gayi
+12 | Asha   | nahi yaar kal wala bilkul different tha
+13 | Rohan  | waise kal ki party ke liye nayi shirt li kya?
+14 | Asha   | haan ek red shirt li hai
+15 | Rohan  | nice, jeans ke saath pehnegi?
+16 | Asha   | haan dark blue wali jeans
+17 | Rohan  | main soch raha black shirt pehen lu
+18 | Asha   | woh achhi lagegi
+19 | Rohan  | party kitne baje start hai?
+20 | Asha   | 7 baje, late mat hona
+21 | Rohan  | school ka science project submit hua kya?
+22 | Asha   | nahi, abhi charts complete karne hain
+23 | Rohan  | teacher ne deadline Friday boli thi na
+24 | Asha   | haan but ab Monday tak extension mil gayi
+25 | Rohan  | acha, then tension kam hai
+26 | Asha   | data wala part tu kar lega?
+27 | Rohan  | haan, graphs main bana dunga
+28 | Asha   | presentation mujhe bhej dena
+29 | Rohan  | kal teacher ne format bhi bataya tha
+30 | Asha   | woh format mujhe yaad nahi, photo bhej de
+31 | Rohan  | abhi bhejta hu, first slide pe title chahiye
+32 | Asha   | okay, main intro likh deti hu
+33 | Rohan  | done, project ab almost ready hai
+34 | Asha   | next day: kal wali thand ab aur badh gayi
+35 | Rohan  | haan, aaj to heater on karna pada
+36 | Asha   | tu heater kharid raha tha na?
+37 | Rohan  | haan, kal order kiya, delivery Sunday ko hai
+38 | Asha   | mere ghar mein bhi subah bahut cold tha
+39 | Rohan  | pichle saal October mein aisa nahi hua tha
+40 | Asha   | exactly, iss baar winter jaldi aa gaya
+41 | Rohan  | weekend pe temperature aur gir sakta hai

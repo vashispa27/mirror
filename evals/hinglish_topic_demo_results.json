@@ -1,0 +1,69 @@
+{
+  "model": "mlx-community/Qwen3.5-4B-MLX-4bit",
+  "results": [
+    {
+      "block": [
+        0,
+        29
+      ],
+      "elapsed_seconds": 5.6,
+      "raw_output": "{\n  \"starts\": [\n    {\n      \"index\": 2,\n      \"topic_id\": \"T1\",\n      \"label\": \"Weather\",\n      \"kind\": \"NEW\"\n    },\n    {\n      \"index\": 13,\n      \"topic_id\": \"T2\",\n      \"label\": \"Party Planning\",\n      \"kind\": \"NEW\"\n    },\n    {\n      \"index\": 21,\n      \"topic_id\": \"T3\",\n      \"label\": \"School Project\",\n      \"kind\": \"NEW\"\n    }\n  ],\n  \"ending_topic\": {\n    \"topic_id\": \"T3\",\n    \"label\": \"School Project\",\n    \"summary\": \"Rohan mentions the teacher has already explained the project format.\"\n  }\n}",
+      "parsed": {
+        "starts": [
+          {
+            "index": 2,
+            "topic_id": "T1",
+            "label": "Weather",
+            "kind": "NEW"
+          },
+          {
+            "index": 13,
+            "topic_id": "T2",
+            "label": "Party Planning",
+            "kind": "NEW"
+          },
+          {
+            "index": 21,
+            "topic_id": "T3",
+            "label": "School Project",
+            "kind": "NEW"
+          }
+        ],
+        "ending_topic": {
+          "topic_id": "T3",
+          "label": "School Project",
+          "summary": "Rohan mentions the teacher has already explained the project format."
+        }
+      }
+    },
+    {
+      "block": [
+        30,
+        41
+      ],
+      "elapsed_seconds": 4.08,
+      "raw_output": "{\n  \"starts\": [\n    {\n      \"index\": 30,\n      \"topic_id\": \"T4\",\n      \"label\": \"Project Details\",\n      \"kind\": \"NEW\"\n    },\n    {\n      \"index\": 34,\n      \"topic_id\": \"T5\",\n      \"label\": \"Weather\",\n      \"kind\": \"NEW\"\n    }\n  ],\n  \"ending_topic\": {\n    \"topic_id\": \"T5\",\n    \"label\": \"Weather\",\n    \"summary\": \"Rohan warns that the temperature might drop further on the weekend.\"\n  }\n}",
+      "parsed": {
+        "starts": [
+          {
+            "index": 30,
+            "topic_id": "T4",
+            "label": "Project Details",
+            "kind": "NEW"
+          },
+          {
+            "index": 34,
+            "topic_id": "T5",
+            "label": "Weather",
+            "kind": "NEW"
+          }
+        ],
+        "ending_topic": {
+          "topic_id": "T5",
+          "label": "Weather",
+          "summary": "Rohan warns that the temperature might drop further on the weekend."
+        }
+      }
+    }
+  ]
+}

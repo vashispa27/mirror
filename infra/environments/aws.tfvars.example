@@ -1,0 +1,21 @@
+project_name   = "replica-ingestion"
+environment    = "dev"
+aws_region     = "ap-south-1"
+use_localstack = false
+
+enable_deletion_protection    = true
+enable_point_in_time_recovery = true
+log_retention_days            = 14
+
+# Keep schedules disabled until real crawlers, source records, rate limiting,
+# and platform authorization have been implemented and reviewed.
+crawler_schedules = {
+  public_accounts = {
+    schedule_expression = "rate(1 day)"
+    enabled             = false
+    payload = {
+      mode = "incremental"
+    }
+  }
+}
+
