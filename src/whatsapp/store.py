@@ -6,6 +6,7 @@ code with ``rag_lab`` so experimentation cannot affect ingestion behavior.
 
 from __future__ import annotations
 
+import os
 import uuid
 from dataclasses import dataclass
 from typing import Any, Iterable, Sequence
@@ -18,7 +19,12 @@ LEGACY_COLLECTION = "mirror_whatsapp_v1"
 DEFAULT_QDRANT_URL = "http://localhost:6333"
 DENSE_VECTOR = "dense"
 SPARSE_VECTOR = "sparse"
-DENSE_MODEL = "BAAI/bge-small-en-v1.5"
+
+#: Dense encoder for the voice index. Override with MIRROR_DENSE_MODEL to
+#: compare encoders without editing code; the query encoder reads the same
+#: value, so both sides of the search stay in step.
+DEFAULT_DENSE_MODEL = "BAAI/bge-small-en-v1.5"
+DENSE_MODEL = os.environ.get("MIRROR_DENSE_MODEL", DEFAULT_DENSE_MODEL)
 SPARSE_MODEL = "Qdrant/bm25"
 
 

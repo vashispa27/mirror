@@ -30,6 +30,19 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--month-first", action="store_true")
     parser.add_argument("--collection", default=DEFAULT_COLLECTION)
     parser.add_argument(
+        "--max-messages",
+        type=int,
+        default=5,
+        help="Whole messages per persona chunk (default 5; see data/chunk-sweep.json).",
+    )
+    parser.add_argument(
+        "--overlap-messages",
+        type=int,
+        default=None,
+        help="Messages shared between neighbouring chunks "
+        "(default: 20%% of --max-messages).",
+    )
+    parser.add_argument(
         "--qdrant-url",
         default=os.environ.get("QDRANT_URL", DEFAULT_QDRANT_URL),
     )
@@ -73,7 +86,19 @@ def main() -> None:
         requested_selector = args.target_author
         target_author = resolve_target_author(messages, requested_selector)
 
-    chunks = chunk_conversation(messages)
+    max_messages = args.max_messages
+    if max_messages < 1:
+        _parser().error("--max-messages must be at least 1")
+    overlap = (
+        args.overlap_messages
+        if args.overlap_messages is not None
+        else max(0, round(max_messages * 0.2))
+    )
+    if overlap >= max_messages:
+        overlap = max_messages - 1
+    chunks = chunk_conversation(
+        messages, max_messages=max_messages, overlap_messages=overlap
+    )
     records = build_persona_records(
         messages,
         chunks,

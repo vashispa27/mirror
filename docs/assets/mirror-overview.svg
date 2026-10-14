@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 300" role="img" aria-labelledby="title desc">
+  <title id="title">How Mirror turns a chat export into useful data</title>
+  <desc id="desc">A WhatsApp text export passes through human review into Postgres source messages, then branches to topic memory, voice examples, and SFT training examples.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#f7f7ff"/>
+      <stop offset="1" stop-color="#eaf8f4"/>
+    </linearGradient>
+    <style>
+      .card { fill: #fff; stroke: #cfd9e5; stroke-width: 2 }
+      .label { font: 700 21px system-ui, sans-serif; fill: #182537 }
+      .detail { font: 16px system-ui, sans-serif; fill: #4a5a6e }
+      .line { fill: none; stroke: #657c92; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#657c92"/>
+    </marker>
+  </defs>
+  <rect width="1080" height="300" rx="24" fill="url(#bg)"/>
+  <path class="line" marker-end="url(#arrow)" d="M206 150h53"/>
+  <path class="line" marker-end="url(#arrow)" d="M477 150h53"/>
+  <path class="line" marker-end="url(#arrow)" d="M741 150h49V57h24"/>
+  <path class="line" marker-end="url(#arrow)" d="M741 150h73"/>
+  <path class="line" marker-end="url(#arrow)" d="M741 150h49v93h24"/>
+  <rect class="card" x="30" y="91" width="176" height="118" rx="18"/>
+  <text class="label" x="52" y="139">WhatsApp</text>
+  <text class="detail" x="52" y="171">.txt export</text>
+  <rect class="card" x="260" y="91" width="217" height="118" rx="18"/>
+  <text class="label" x="282" y="139">Human review</text>
+  <text class="detail" x="282" y="171">keep, omit, redact</text>
+  <rect class="card" x="531" y="91" width="210" height="118" rx="18"/>
+  <text class="label" x="553" y="139">Source chat</text>
+  <text class="detail" x="553" y="171">Postgres + IDs</text>
+  <rect class="card" x="815" y="22" width="237" height="69" rx="16"/>
+  <text class="label" x="837" y="52">Memory</text>
+  <text class="detail" x="837" y="75">topics + raw spans</text>
+  <rect class="card" x="815" y="115" width="237" height="69" rx="16"/>
+  <text class="label" x="837" y="145">Voice</text>
+  <text class="detail" x="837" y="168">reply examples</text>
+  <rect class="card" x="815" y="208" width="237" height="69" rx="16"/>
+  <text class="label" x="837" y="238">SFT files</text>
+  <text class="detail" x="837" y="261">approved real replies</text>
+</svg>
